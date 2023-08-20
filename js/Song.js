@@ -4,6 +4,7 @@ import { SheetGenerator } from "./sheet/SheetGenerator.js"
 import { getLoader } from "./ui/Loader.js"
 export class Song {
 	constructor(opts) {
+		console.log(opts,'opts')
 		this.fileName = opts.fileName
 		this.name = opts.name || opts.fileName
 		this.copyright = opts.copyright || ""

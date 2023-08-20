@@ -201,6 +201,7 @@ class Player {
 		return this.loadInstrumentsForSong(this.song)
 	}
 	setSong(song) {
+		console.log("Song loaded.",song)
 		this.pause()
 		this.playing = false
 		this.paused = true
