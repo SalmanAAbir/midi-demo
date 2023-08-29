@@ -292,7 +292,7 @@ const assets = [
 	"/Reverb/WaterplacePark.wav",
 	"/Reverb/WISSTLEPLATE-1.wav",
 
-	"/exampleSongs/piano-midi/alb_esp1.mid",
+	// "/exampleSongs/piano-midi/alb_esp1.mid",
 ]
 
 self.addEventListener("install", installEvent => {
