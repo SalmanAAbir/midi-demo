@@ -34,16 +34,7 @@ const sections = {
 			{
 				title: "28.07.2023",
 				bulletPoints: [
-					"<b>New Feature: Loops!</b> You can now set a loop over a number of measures and midiano will repeatedly play those. Should help a lot when trying to learn a song bit by bit.",
-					"Added hotkeys to navigate/extend/decrease/enable a loop.",
-					"Track settings are now saved for each song individually! Also added a button to reset all track settings.",
-					"You can now directly link midi files into midiano. If you pass an URL paramenter 'songUrl' with the url to a midi file like https://midiano.com?songUrl=<LINK_TO_YOUR_FILE> Midiano will automatically open the file. Check out this link to <a href='https://midiano.com?songUrl=https://github.com/Bewelge/piano-midi.de-Files/raw/master/midi/elise.mid'>Für Elise</a>. You'll have to make sure that the site serving the MIDI file supports <a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS'>CORS</a>. I'll try to make a post about this soon explaining it in more detail. ",
-					"New shiny piano rendering! Looks a lot less cartoony than previously.",
-					"Particles should now clear properly when you turn off the setting.",
-					"Added ids to all forms to improve accessibility.",
-					"Improved initial startup performance.",
-					"Increased the main volume & added a setting to increase the base volume. You can find it in the Audio Settings under 'General'.",
-					"Cleaned up the UI a little. "
+					""
 				]
 			},
 			{
