@@ -151,21 +151,21 @@ export class UI {
 		let empty1 = DomHelper.createElementWithClass("topContainer hiddenIfSmall")
 		let empty2 = DomHelper.createElementWithClass("topContainer hiddenIfSmall")
 		let leftTop0 = DomHelper.createElementWithClass(
-			"topContainer hiddenIfSmall"
+			"topContainer d-none hiddenIfSmall"
 		)
 		let leftTop1 = DomHelper.createElementWithClass(
-			"topContainer hiddenIfSmall"
+			"topContainer d-none hiddenIfSmall"
 		)
 
 		let middleTop = DomHelper.createElementWithClass("topContainer")
 		let rightTop0 = DomHelper.createElementWithClass(
-			"topContainer hiddenIfSmall"
+			"topContainer d-none hiddenIfSmall"
 		)
 		let rightTop1 = DomHelper.createElementWithClass(
 			"topContainer hiddenIfSmall"
 		)
 		let rightTop2 = DomHelper.createElementWithClass(
-			"topContainer hiddenIfSmall"
+			"topContainer d-none hiddenIfSmall"
 		)
 
 		let sandwichMenuTop = DomHelper.createElementWithClass(

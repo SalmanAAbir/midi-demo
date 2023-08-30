@@ -221,8 +221,8 @@ async function loadSongButtonClickCallback(song, isFromDb) {
 }
 
 function getLocalSongUrl(song) {
-	// return `/exampleSongs/piano-midi/${song.fileName}`
-	return `https://karaoke.willydeepfake.com/media/midi-file/test_basic_pitch.mid`
+	return `/exampleSongs/piano-midi/${song.fileName}`
+	// return `https://karaoke.willydeepfake.com/media/midi-file/test_basic_pitch.mid`
 	// `https://bewelge.github.io/piano-midi.de-Files/midi/${song.fileName}?raw=true`
 }
 let theUploadedGroupsDiv = null

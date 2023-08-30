@@ -682,6 +682,12 @@ input[type="text"].forcedThinButton {
 	align-items: center;
 	align-items: unset;
 }
+.d-none{
+	display: none;
+}
+#fitSongButton{
+	display: none;
+}
 .topContainer.shownIfSmall {
 	justify-content: flex-end;
 }
