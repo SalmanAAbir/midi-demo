@@ -43,7 +43,7 @@ class Loader {
 			)
 			let logo = document.createElement("img")
 			logo.className = "logo"
-			logo.src = "./images/logo3.svg"
+			logo.src = "./images/logo.png"
 			logo.onload = () => {}
 
 			this.textDiv = DomHelper.createDivWithClass("loadingText")

@@ -1,335 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html;" />
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"
-		/>
-		<meta
-			name="google-site-verification"
-			content="w0SMD6jKSdkWT2VpCPmIXm90nXUhAtczUysV2kWaBUE"
-		/>
 
-		<title>Midiano</title>
+<head>
+	<meta http-equiv="content-type" content="text/html;" />
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="manifest" href="manifest.json" />
-		<!-- ios support -->
+	<title>Midi Player</title>
 
-		<meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-		<meta name="theme-color" content="#db4938" />
+	<!-- <link rel="manifest" href="manifest.json" /> -->
+	<!-- ios support -->
 
-		<!-- FAVICONS START -->
-		<link rel="shortcut icon" href="favicons/favicon.ico" />
-		<link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="196x196"
-			href="favicons/favicon-192.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="160x160"
-			href="favicons/favicon-160.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="96x96"
-			href="favicons/favicon-96.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="64x64"
-			href="favicons/favicon-64.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="favicons/favicon-32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="favicons/favicon-16.png"
-		/>
-		<link rel="apple-touch-icon" href="favicons/favicon-57.png" />
-		<link
-			rel="apple-touch-icon"
-			sizes="114x114"
-			href="favicons/favicon-114.png"
-		/>
-		<link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png" />
-		<link
-			rel="apple-touch-icon"
-			sizes="144x144"
-			href="favicons/favicon-144.png"
-		/>
-		<link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png" />
-		<link
-			rel="apple-touch-icon"
-			sizes="120x120"
-			href="favicons/favicon-120.png"
-		/>
-		<link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png" />
-		<link
-			rel="apple-touch-icon"
-			sizes="152x152"
-			href="favicons/favicon-152.png"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="favicons/favicon-180.png"
-		/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="favicons/favicon-144.png" />
-		<meta name="msapplication-config" content="favicons/browserconfig.xml" />
-		<!-- FAVICONS END -->
 
-		<!-- OPENGRAPH START -->
-		<meta property="og:title" content="Midiano" />
-		<meta property="og:site_name" content="midiano.com" />
-		<meta property="og:url" content="https://midiano.com" />
-		<meta
-			property="og:description"
-			content="Midiano is an interactive Piano-learning app that runs on any device with a modern browser."
-		/>
-		<meta property="og:type" content="website" />
-		<meta
-			property="og:image"
-			content="https://midiano.com/images/openGraphScreen.png"
-		/>
-		<!-- OPENGRAPH END -->
-		<meta
-			name="description"
-			content="Midiano is an interactive Piano-learning app that runs on any device with a modern browser. Open any MIDI-File and Midiano shows you the notes as falling bars over a piano as well as the corresponding sheet music. Connect a MIDI-Keyboard to get instant feedback if you hit the correct notes. You can also use the keyboard as output device to play the MIDI-Files on your keyboard."
-		/>
+	<!-- FAVICONS START -->
+	<!-- FAVICONS END -->
 
-		<link
-			defer
-			rel="preload"
-			href="./css/bootstrap.min.css"
-			as="style"
-			onload="this.rel='stylesheet'"
-		/>
+	<!-- OPENGRAPH START -->
+	<meta property="og:title" content="Midiano" />
+	<meta property="og:site_name" content="midiano.com" />
+	<meta property="og:url" content="https://midiano.com" />
+	<meta property="og:description"
+		content="Midiano is an interactive Piano-learning app that runs on any device with a modern browser." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://midiano.com/images/openGraphScreen.png" />
+	<!-- OPENGRAPH END -->
+	<meta name="description"
+		content="Midiano is an interactive Piano-learning app that runs on any device with a modern browser. Open any MIDI-File and Midiano shows you the notes as falling bars over a piano as well as the corresponding sheet music. Connect a MIDI-Keyboard to get instant feedback if you hit the correct notes. You can also use the keyboard as output device to play the MIDI-Files on your keyboard." />
 
-		<link rel="stylesheet" type="text/css" href="./css/landingPage.css" />
-		<link defer rel="stylesheet" type="text/css" href="./css/Interface.css" />
-		<link defer rel="stylesheet" type="text/css" href="./css/Inputs.css" />
-		<link defer rel="stylesheet" type="text/css" href="./css/Settings.css" />
+	<link defer rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" />
 
-		<!-- lib -->
-		<link defer rel="stylesheet" href="./css/nano.min.css" />
-		<!-- "https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> -->
-		<link
-			defer
-			rel="stylesheet"
-			type="text/css"
-			href="./css/bootstrap.min.css"
-		/>
-		<link defer rel="stylesheet" href="./css/bootstrap-theme.min.css" />
-		<!--"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+	<link rel="stylesheet" type="text/css" href="./css/landingPage.css" />
+	<link defer rel="stylesheet" type="text/css" href="./css/Interface.css" />
+	<link defer rel="stylesheet" type="text/css" href="./css/Inputs.css" />
+	<link defer rel="stylesheet" type="text/css" href="./css/Settings.css" />
 
-		<script defer src="lib/Pickr/pickr.es5.min.js"></script>
-		<script defer src="lib/Base64.js" type="text/javascript"></script>
-		<script defer src="lib/Base64binary.js" type="text/javascript"></script>
-		<script defer src="lib/vexflow-min.js" type="text/javascript"></script>
-		<script defer src="lib/three.min.js" type="text/javascript"></script>
+	<!-- lib -->
+	<link defer rel="stylesheet" href="./css/nano.min.css" />
+	<!-- "https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> -->
+	<link defer rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	<link defer rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+	<!--"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
 
-		<script type="module" src="js/main.js"></script>
+	<script defer src="lib/Pickr/pickr.es5.min.js"></script>
+	<script defer src="lib/Base64.js" type="text/javascript"></script>
+	<script defer src="lib/Base64binary.js" type="text/javascript"></script>
+	<script defer src="lib/vexflow-min.js" type="text/javascript"></script>
+	<script defer src="lib/three.min.js" type="text/javascript"></script>
 
-		<script
-			data-goatcounter="https://midiano.goatcounter.com/count"
-			async
-			src="./lib/goatCounter.js"
-		></script>
-	</head>
-	<body>
-		<div id="landingPage" class="">
-			<!-- <div id="lpTopPlaceholder"></div> -->
+	<script type="module" src="js/main.js"></script>
 
-			<div id="lpMainWrapper" class="dottedBg">
-				<div id="lpTop">
-					<div id="logoWrapper" class="lpTopDiv">
-						<a href="https://midiano.com"
-							><img alt="Midiano" id="logoImg" src="./images/logo3.svg" />
-						</a>
-					</div>
-					<div id="lpTopStartWrap" class="lpTopDiv">
-						<button id="lpTopStartButton" class="lpStartButton">Start</button>
-					</div>
-					<div id="lpTopMenuWrapper" class="lpTopDiv">
-						<div id="lpTabsWrapper" class="tabsWrapper">
-							<div id="lpTabsWrapperSelectionLine"></div>
-							<div id="AbouttabDiv" class="tabDiv"><span>About</span></div>
-							<div id="DevelopmentRoadmaptabDiv" class="tabDiv">
-								<span>Development Roadmap</span>
-							</div>
-							<div id="UpdatestabDiv" class="tabDiv"><span>Updates</span></div>
-							<div id="ContacttabDiv" class="tabDiv"><span>Contact</span></div>
-							<div id="PrivacytabDiv" class="tabDiv"><span>Privacy</span></div>
-						</div>
-						<div id="lpBurgerButton" class="burgerButton">
-							<span class="glyphicon glyphicon-list"></span>
-						</div>
-					</div>
+	<!-- <script data-goatcounter="https://midiano.goatcounter.com/count" async src="./lib/goatCounter.js"></script> -->
+</head>
+
+<body>
+	<div id="landingPage" class="">
+		<!-- <div id="lpTopPlaceholder"></div> -->
+
+		<div id="lpMainWrapper" class="dottedBg">
+			<div id="lpTop">
+				<div id="logoWrapper" class="lpTopDiv">
+					<a href="https://midiano.com"><img alt="Midiano" id="logoImg" src="./images/logo.png" />
+					</a>
 				</div>
-				<div id="lpBurgerMenu" class="burgerMenu dottedBg">
-					<div id="AboutBurgerDiv" class="burgerDiv">About</div>
-					<div id="DevelopmentRoadmapBurgerDiv" class="burgerDiv">
-						Development Roadmap
-					</div>
-					<div id="UpdatesBurgerDiv" class="burgerDiv">Updates</div>
-					<div id="ContactBurgerDiv" class="burgerDiv">Contact</div>
-					<div id="PrivacyBurgerDiv" class="burgerDiv">Privacy</div>
+				<div id="lpTopStartWrap" class="lpTopDiv">
+					<button id="lpTopStartButton" class="lpStartButton">Start</button>
 				</div>
-				<div id="lpContentWrapper">
-					<div id="firstSection" class="lpSection dottedBg">
-						<h1 id="lpHeaderText">Start learning piano today!</h1>
-						<button class="lpStartButton">Start</button>
-						<div id="screenshotWrapper">
-							<img
-								alt="Midiano Screenshot"
-								loading="lazy"
-								src="images/screenShotNew.webp"
-								id="screenshot"
-							/>
+				<div id="lpTopMenuWrapper" class="lpTopDiv">
+					<div id="lpTabsWrapper" class="tabsWrapper">
+						<div id="lpTabsWrapperSelectionLine"></div>
+						<div id="AbouttabDiv" class="tabDiv"><span>About</span></div>
+						<div id="DevelopmentRoadmaptabDiv" class="tabDiv">
+							<span>Development Roadmap</span>
 						</div>
+						<div id="UpdatestabDiv" class="tabDiv"><span>Updates</span></div>
+						<div id="ContacttabDiv" class="tabDiv"><span>Contact</span></div>
+						<div id="PrivacytabDiv" class="tabDiv"><span>Privacy</span></div>
 					</div>
-
-					<div id="secondSection" class="lpSection dottedBg">
-						<div id="features">
-							<!-- <p>Features</p> -->
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-play"></span>
-								<div>Play any MIDI-File or choose one of the sample songs</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-play"></span>
-								<div>
-									Pause, Skip Forward or Backward, Adjust the Speed - Intuitive
-									controls allow quick navigation through the song
-								</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-random"></span>
-								<div>Automatic Sheet generation.</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-random"></span>
-								<div>MIDI-Keyboard support - Input & Output</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-time"></span>
-								<div>
-									Play-along-mode - Midiano waits for you to hit the correct
-									notes
-								</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-time"></span>
-								<div>
-									Sustain-info - View sustain-pedal events and sustained notes
-								</div>
-							</div>
-							<!-- <div class="featureBox"><span class="glyphicon glyphicon-fast-forward"></span><div>Play at any speed</div></div> -->
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-wrench"></span>
-								<div>
-									Track-control - Customize and only display or play the tracks
-									you want
-								</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-wrench"></span>
-								<div>Customize colors, effects, instruments and much more</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-music"></span>
-								<div>3 different Soundfonts to choose from</div>
-							</div>
-							<div class="featureBox">
-								<span class="glyphicon glyphicon-music"></span>
-								<div>
-									Works on any device with a modern browser (Firefox, Chrome,
-									Edge, Safari, iOS or Android. It doesn't work in IE.)
-								</div>
-							</div>
-							<!-- <div class="featureBox"><span class="glyphicon glyphicon-list"></span><div>Customize individual Tracks - Change instrument, color, volume etc.</div></div> -->
-						</div>
+					<div id="lpBurgerButton" class="burgerButton">
+						<span class="glyphicon glyphicon-list"></span>
 					</div>
 				</div>
 			</div>
-
-			<div id="startPage" class="dottedBg">
-				<div id="startPageMain">
-					<div style="flex: 3"></div>
-					<a href="https://midiano.com"
-						><img alt="Midiano" class="logo" src="./images/logo3.svg"
-					/></a>
-
-					<div id="subtitle">
-						<div>L</div>
-						<div>e</div>
-						<div>a</div>
-						<div>r</div>
-						<div>n</div>
-						<div>&nbsp</div>
-						<div>p</div>
-						<div>i</div>
-						<div>a</div>
-						<div>n</div>
-						<div>o</div>
-						<div>&nbsp</div>
-						<div>i</div>
-						<div>n</div>
-						<div>&nbsp</div>
-						<div>y</div>
-						<div>o</div>
-						<div>u</div>
-						<div>r</div>
-						<div>&nbsp</div>
-						<div>b</div>
-						<div>r</div>
-						<div>o</div>
-						<div>w</div>
-						<div>s</div>
-						<div>e</div>
-						<div>r</div>
+			<div id="lpBurgerMenu" class="burgerMenu dottedBg">
+				<div id="AboutBurgerDiv" class="burgerDiv">About</div>
+				<div id="DevelopmentRoadmapBurgerDiv" class="burgerDiv">
+					Development Roadmap
+				</div>
+				<div id="UpdatesBurgerDiv" class="burgerDiv">Updates</div>
+				<div id="ContactBurgerDiv" class="burgerDiv">Contact</div>
+				<div id="PrivacyBurgerDiv" class="burgerDiv">Privacy</div>
+			</div>
+			<div id="lpContentWrapper">
+				<div id="firstSection" class="lpSection dottedBg">
+					<h1 id="lpHeaderText">Start learning piano today!</h1>
+					<button class="lpStartButton">Start</button>
+					<div id="screenshotWrapper">
+						<img alt="Midiano Screenshot" loading="lazy" src="images/screenShotNew.webp" id="screenshot" />
 					</div>
+				</div>
 
-					<div id="startButtons" style="margin: 16px" class="btn-group">
-						<button class="btn" id="startButton">Start</button>
-						<button class="btn" id="aboutButton">About</button>
+				<div id="secondSection" class="lpSection dottedBg">
+					<div id="features">
+						<!-- <p>Features</p> -->
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-play"></span>
+							<div>Play any MIDI-File or choose one of the sample songs</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-play"></span>
+							<div>
+								Pause, Skip Forward or Backward, Adjust the Speed - Intuitive
+								controls allow quick navigation through the song
+							</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-random"></span>
+							<div>Automatic Sheet generation.</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-random"></span>
+							<div>MIDI-Keyboard support - Input & Output</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-time"></span>
+							<div>
+								Play-along-mode - Midiano waits for you to hit the correct
+								notes
+							</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-time"></span>
+							<div>
+								Sustain-info - View sustain-pedal events and sustained notes
+							</div>
+						</div>
+						<!-- <div class="featureBox"><span class="glyphicon glyphicon-fast-forward"></span><div>Play at any speed</div></div> -->
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-wrench"></span>
+							<div>
+								Track-control - Customize and only display or play the tracks
+								you want
+							</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-wrench"></span>
+							<div>Customize colors, effects, instruments and much more</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-music"></span>
+							<div>3 different Soundfonts to choose from</div>
+						</div>
+						<div class="featureBox">
+							<span class="glyphicon glyphicon-music"></span>
+							<div>
+								Works on any device with a modern browser (Firefox, Chrome,
+								Edge, Safari, iOS or Android. It doesn't work in IE.)
+							</div>
+						</div>
+						<!-- <div class="featureBox"><span class="glyphicon glyphicon-list"></span><div>Customize individual Tracks - Change instrument, color, volume etc.</div></div> -->
 					</div>
-					<div style="flex: 2"></div>
-					<div id="socialLogos">
-						<a href="https://www.reddit.com/r/midiano/"
-							><img
-								alt="Link to Subreddit /r/midiano"
-								src="/images/socials/RedditGrey.svg"
-						/></a>
-						<a href="https://twitter.com/MidianoOfficial"
-							><img
-								alt="Link to official Twitter profile"
-								src="/images/socials/TwitterGrey.svg"
-						/></a>
-						<a href="https://discord.gg/SfFdbunEm2"
-							><img
-								alt="Link to discord chat room"
-								src="/images/socials/DiscordGrey.svg"
-						/></a>
-					</div>
-					<div style="flex: 0.5"></div>
 				</div>
 			</div>
 		</div>
-	</body>
+
+		<div id="startPage" class="dottedBg">
+			<div id="startPageMain">
+				<div style="flex: 3"></div>
+				<a href="https://midiano.com" class="d-none"><img alt="Midiano" class="logo"
+						src="./images/logo.png" /></a>
+
+				<div id="subtitle" class="d-none">
+					<div>L</div>
+					<div>e</div>
+					<div>a</div>
+					<div>r</div>
+					<div>n</div>
+					<div>&nbsp</div>
+					<div>p</div>
+					<div>i</div>
+					<div>a</div>
+					<div>n</div>
+					<div>o</div>
+					<div>&nbsp</div>
+					<div>i</div>
+					<div>n</div>
+					<div>&nbsp</div>
+					<div>y</div>
+					<div>o</div>
+					<div>u</div>
+					<div>r</div>
+					<div>&nbsp</div>
+					<div>b</div>
+					<div>r</div>
+					<div>o</div>
+					<div>w</div>
+					<div>s</div>
+					<div>e</div>
+					<div>r</div>
+				</div>
+
+				<div id="startButtons" style="margin: 16px" class="btn-group d-none">
+					<button class="btn" id="startButton">Start</button>
+					<button class="btn" id="aboutButton">About</button>
+				</div>
+				<div style="flex: 2"></div>
+				<div id="socialLogos" class="d-none">
+					<a href="https://www.reddit.com/r/midiano/"><img alt="Link to Subreddit /r/midiano"
+							src="/images/socials/RedditGrey.svg" /></a>
+					<a href="https://twitter.com/MidianoOfficial"><img alt="Link to official Twitter profile"
+							src="/images/socials/TwitterGrey.svg" /></a>
+					<a href="https://discord.gg/SfFdbunEm2"><img alt="Link to discord chat room"
+							src="/images/socials/DiscordGrey.svg" /></a>
+				</div>
+				<div style="flex: 0.5"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>

@@ -65,7 +65,7 @@ const assets = [
 	"/images/fav.svg",
 	"/images/favicon.png",
 
-	"/images/logo3.svg",
+	"/images/logo.png",
 	"/images/notehead.svg",
 	"/images/openGraphScreen.webp",
 	"/images/screenShotNew.webp",

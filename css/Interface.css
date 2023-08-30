@@ -683,7 +683,7 @@ input[type="text"].forcedThinButton {
 	align-items: unset;
 }
 .d-none{
-	display: none;
+	display: none !important;
 }
 #fitSongButton{
 	display: none;

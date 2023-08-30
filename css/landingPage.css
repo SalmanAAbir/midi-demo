@@ -229,8 +229,8 @@ console.log(totStr) */
 }
 
 .logo {
-	max-width: 400px;
-	width: 90%;
+	/* max-width: 400px; */
+	width: max-content;
 	transition: all 0.25s ease-out;
 	/* margin: 16px !important; */
 	opacity: 0;
@@ -258,6 +258,9 @@ console.log(totStr) */
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+.d-none{
+	display: none !important;
 }
 
 #socialLogos img {
