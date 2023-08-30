@@ -3,8 +3,8 @@ import { DomHelper } from "./js/ui/DomHelper.js"
 const sections = {
 	About: {
 		lines: [
-			"Midiano is an interactive Piano-learning app that runs on any device with a modern browser.",
-			"Open any MIDI-File and Midiano shows you the notes as falling bars over a piano as well as the corresponding sheet music.",
+			" is an interactive Piano-learning app that runs on any device with a modern browser.",
+			"Open any MIDI-File and  shows you the notes as falling bars over a piano as well as the corresponding sheet music.",
 			"Connect a MIDI-Keyboard to get instant feedback if you hit the correct notes.",
 			" You can also use the keyboard as output device to play the MIDI-Files on your keyboard. ",
 			"",
@@ -55,7 +55,7 @@ const sections = {
 			{
 				title: "11.02.23",
 				bulletPoints: [
-					"Made Midiano installable! You can now install Midiano through your browser and use it offline. See if your <a href='https://caniuse.com/?search=PWA'>browser supports progressive web apps here</a>.",
+					"Made  installable! You can now install  through your browser and use it offline. See if your <a href='https://caniuse.com/?search=PWA'>browser supports progressive web apps here</a>.",
 					"Fixed a memory leak that caused the particles to lag during garbage collection"
 				]
 			},
@@ -202,14 +202,14 @@ const sections = {
 	},
 	Contact: {
 		lines: [
-			"If you find a bug or have a question, issue or recommendation, please let me know by opening an issue on <a href='https://github.com/Bewelge/MIDIano/issues'>Github</a> or send an E-Mail to <span id='m'></span>. "
+			"If you find a bug or have a question, issue or recommendation, please let me know by opening an issue on <a href='https://github.com/Bewelge/issues'>Github</a> or send an E-Mail to <span id='m'></span>. "
 			// "Please be patient if I don't manage to get back to you right away. I work a full-time job and occasionaly have to sleep ;-) "
 		]
 	},
 	Privacy: {
 		lines: [
 			"Cookies:",
-			"This website uses LocalStorage to save the settings of midiano that you have customized. This is entirely functional.",
+			"This website uses LocalStorage to save the settings of  that you have customized. This is entirely functional.",
 			"",
 			"GoatCounter:",
 			"This website uses <a href='https://www.goatcounter.com/'>GoatCounter</a> to track the amount of visits to this website. It tracks NO personal data. The following information is collected: ",
